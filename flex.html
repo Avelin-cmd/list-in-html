@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .logo{
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 20px 50px;
+            background-color: black;
+            box-shadow: 0 4px 6px;
+        }
+       header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 20px 50px;
+            background-color: rgba(51, 51, 51, 0.95);
+            color: #ef3d3d;
+            flex-wrap: wrap;
+            gap: 20px;
+            box-shadow: 0 4px 6px rgba(0,0,0,0.3);
+        }
+
+        header .logo {
+            font-size: 28px;
+            font-weight: bold;
+            background: linear-gradient(45deg, #ff6b6b, #feca57);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+        }
+
+        /* Advanced: Nested flexbox for navigation */
+        header nav {
+            display: flex;
+            align-items: center;
+            gap: 15px;
+            flex: 1;
+            justify-content: flex-end;
+            flex-wrap: wrap;
+        }
+        a{
+            font-size: 30px;
+            color: crimson;
+        }
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+
+        body {
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            min-height: 100vh;
+        }
+        .hero{
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            padding: 80px 20px;
+            background: linear-gradient(135deg, rgba(232, 6, 253, 0.912), rgba(255,255,255,0.05));
+            backdrop-filter: blur(10px);
+            margin: 30px;
+            border-radius: 20px;
+            box-shadow: 0 8px 32px rgb(244, 240, 1);
+        }
+
+    </style>
+</head>
+<body>
+   <header>
+        <div class="logo">🛍️ FlexStore Pro</div>
+        <nav>
+            <a href="#">Home</a>
+            <a href="#">Shop</a>
+            <a href="#">About</a>
+            <a href="#">Contact</a>
+            <a href="#" class="cart">🛒 Cart (0)</a>
+        </nav>
+    </header>
+    <section class="hero">
+        <h1>Master advanced</h1>
+        <p>Build amazing layouts with professional techniques</p>
+        <a href="#" class="btn">Start Learning</a>
+    <div class="flex-info">
+        <h3> You're Learning:</h3>
+        <ul style="line-height: 1.8; color: #333;">
+            <li><code>flex: grow shrink basis</code> - Control how items resize</li>
+            <li><code>flex-wrap</code> - Make items wrap to new lines</li>
+            <li><code>gap</code> - Space between flex items</li>
+            <li><code>align-items</code> & <code>justify-content</code> - Alignment control</li>
+            <li>Nested flexbox containers for complex layouts</li>
+            <li>Responsive design with flexbox</li>
+        </ul>
+    </div>
+    </section>
+</body>
+</html>
